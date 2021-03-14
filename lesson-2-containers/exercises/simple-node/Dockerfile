@@ -6,13 +6,13 @@ WORKDIR /usr/src/app
 
 # Install app dependencies by copying
 # package.json and package-lock.json
-COPY package*.json ./
+COPY lesson-2-containers/exercises/simple-node/package*.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy app source
-COPY . .
+COPY lesson-2-containers/exercises/simple-node/ .
 
 # Bind the port that the image will run on
 EXPOSE 8080
