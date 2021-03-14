@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple-node -f /lesson-2-containers/exercises/simple-node/Dockerfile .
+  - docker build -t simple-node -f lesson-2-containers/exercises/simple-node/Dockerfile .
   - docker tag simple-node mike3983/simple-node:latest
 
 after_success:
